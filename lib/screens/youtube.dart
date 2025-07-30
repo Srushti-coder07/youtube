@@ -64,28 +64,24 @@ class _YoutubeState extends State<Youtube> {
                   ),
                   height: 50,
                   width: 50,
-
-                  // Text(
-                  //   "82k views .3weeks ago",
-                  //   style: TextStyle(color: Colors.grey),
-                  // ),
                 ),
                 SizedBox(width: 15),
-                Text(
-                  "Doremon full movie | hindi dubbed full episode",
-                  style: TextStyle(color: Colors.white),
+                Column(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      "Doremon full movie | hindi dubbed full episode",
+                      style: TextStyle(color: Colors.white),
+                    ),
+                    Text(
+                      "82k views .3weeks ago",
+                      style: TextStyle(color: Colors.grey),
+                    ),
+                  ],
                 ),
               ],
             ),
-            // Column(
-            //   crossAxisAlignment: CrossAxisAlignment.start,
-            //   children: [
-            //     Text(
-            //       "82k views .3weeks ago             ",
-            //       style: TextStyle(color: Colors.grey),
-            //     ),
-            //   ],
-            // ),
             SizedBox(height: 15),
             Row(
               children: [
@@ -102,11 +98,13 @@ class _YoutubeState extends State<Youtube> {
                   height: 60,
                   width: 60,
                 ),
+                SizedBox(width: 10),
                 Text(
                   "Shorts",
                   style: TextStyle(
                     color: Colors.white,
                     fontWeight: FontWeight.bold,
+                    fontSize: 25,
                   ),
                 ),
               ],
@@ -323,17 +321,22 @@ class _YoutubeState extends State<Youtube> {
                   width: 50,
                 ),
                 SizedBox(width: 15),
-                Text(
-                  "miraculous ladybug full episode | hindi dubbed",
-                  style: TextStyle(color: Colors.white),
+                Column(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      "miraculous ladybug full episode | hindi dubbed",
+                      style: TextStyle(color: Colors.white),
+                    ),
+                    Text(
+                      "82k views .5 monts ago",
+                      style: TextStyle(color: Colors.grey),
+                    ),
+                  ],
                 ),
               ],
             ),
-
-            // Text(
-            //   "miraculous ladybug full episode | hindi dubbed",
-            //   style: TextStyle(color: Colors.white),
-            // ),
           ],
         ),
       ),

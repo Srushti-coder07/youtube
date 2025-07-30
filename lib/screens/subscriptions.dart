@@ -296,27 +296,28 @@ class _SubscriptionsState extends State<Subscriptions> {
                       width: 50,
                     ),
                     SizedBox(width: 8),
-                    Text(
-                      "Need For Speed | Full Movie | English Dubbed       ⋮",
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontWeight: FontWeight.bold,
-                      ),
+                    Column(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          "Need For Speed | Full Movie | English Dubbed       ⋮",
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                        Text(
+                          "1.2k views .2 years ago",
+                          style: TextStyle(
+                            color: Colors.grey,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ],
                     ),
                   ],
                 ),
-                // Column(
-                //   crossAxisAlignment: CrossAxisAlignment.start,
-                //   children: [
-                //     Text(
-                //       "Need For Speed",
-                //       style: TextStyle(
-                //         color: Colors.grey,
-                //         fontWeight: FontWeight.bold,
-                //       ),
-                //     ),
-                //   ],
-                // ),
               ],
             ),
             SizedBox(height: 17),
@@ -353,12 +354,25 @@ class _SubscriptionsState extends State<Subscriptions> {
                       width: 50,
                     ),
                     SizedBox(width: 8),
-                    Text(
-                      "Subh - Supreme (Official Music Video)                   ⋮",
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontWeight: FontWeight.bold,
-                      ),
+                    Column(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          "Subh - Supreme (Official Music Video)                   ⋮",
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                        Text(
+                          "1.2k views .2 years ago",
+                          style: TextStyle(
+                            color: Colors.grey,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ],
                     ),
                   ],
                 ),
@@ -380,6 +394,7 @@ class _SubscriptionsState extends State<Subscriptions> {
                   height: 250,
                   width: double.infinity,
                 ),
+                SizedBox(height: 10),
                 Row(
                   children: [
                     Container(
@@ -397,12 +412,25 @@ class _SubscriptionsState extends State<Subscriptions> {
                       width: 50,
                     ),
                     SizedBox(width: 8),
-                    Text(
-                      "Apana College | New Batch | Start Fro..                   ⋮",
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontWeight: FontWeight.bold,
-                      ),
+                    Column(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          "Apana College | New Batch | Start Fro..                   ⋮",
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                        Text(
+                          "1.2k views .2 years ago",
+                          style: TextStyle(
+                            color: Colors.grey,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ],
                     ),
                   ],
                 ),

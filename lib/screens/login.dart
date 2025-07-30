@@ -1,7 +1,7 @@
 //import 'dart:js_interop';
 
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/youtube.dart';
+import 'package:flutter_application_1/screens/youtube.dart';
 //import 'package:get/get_navigation/get_navigation.dart';
 //import 'package:get/get_navigation/get_navigation.dart';
 //import 'package:get/get_navigation/get_navigation.dart';
@@ -17,6 +17,7 @@ class _LoginState extends State<Login> {
   final finalkey = GlobalKey<FormState>();
 
   final TextEditingController emailkey = TextEditingController();
+  final TextEditingController password = TextEditingController();
 
   void login() {
     if (finalkey.currentState!.validate()) {
@@ -45,7 +46,7 @@ class _LoginState extends State<Login> {
                   controller: emailkey,
                   decoration: InputDecoration(
                     border: OutlineInputBorder(),
-                    prefixIcon: Icon(Icons.email),
+                    prefixIcon: Icon(Icons.email, color: Colors.white),
                     hintText: "email",
                   ),
 
@@ -56,9 +57,18 @@ class _LoginState extends State<Login> {
                     if (!RegExp(r'^[^@]+@[^@]+\.[^@]+').hasMatch(value)) {
                       return "enter a valid email";
                     }
+                    return null;
                   },
                 ),
-
+                SizedBox(height: 40),
+                TextFormField(
+                  controller: password,
+                  decoration: InputDecoration(
+                    border: OutlineInputBorder(),
+                    prefixIcon: Icon(Icons.password, color: Colors.white),
+                    hintText: "Password",
+                  ),
+                ),
                 SizedBox(height: 30),
                 ElevatedButton(
                   style: ElevatedButton.styleFrom(

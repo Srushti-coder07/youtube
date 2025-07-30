@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/library.dart';
-import 'package:flutter_application_1/shorts.dart';
-//import 'package:flutter_application_1/shorts.dart';
-import 'package:flutter_application_1/subscriptions.dart';
-import 'package:flutter_application_1/youtube.dart';
+import 'package:flutter_application_1/screens/library.dart';
+import 'package:flutter_application_1/screens/shorts.dart';
+import 'package:flutter_application_1/screens/subscriptions.dart';
+import 'package:flutter_application_1/screens/youtube.dart';
 
 class tabs extends StatefulWidget {
   const tabs({super.key});
@@ -17,7 +16,7 @@ class _tabsState extends State<tabs> {
   final List<Widget> _Screens = [
     // Notificationbar(),
     Youtube(),
-    shortpage(),
+    Shorts(),
     Center(
       child: Icon(Icons.add_circle_outline, size: 80, color: Colors.black),
     ),
